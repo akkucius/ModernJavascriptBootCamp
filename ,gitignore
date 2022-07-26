@@ -1,0 +1,46 @@
+# Ignore everything in the root except the "wp-content" directory.
+#/*
+!.gitignore
+!.gitlab-ci.yml
+!wp-content/
+!robots.txt
+!sitemap.xml
+
+# Development environments
+.lando.yml
+.idea/
+
+# Databases
+*.sql
+*.sql.gz
+*.sqlite
+
+# Logs
+*.log
+
+# Build files
+node_modules/
+
+# Compressed files
+*.zip
+*.tar
+*.gz
+*.rar
+
+# OS files
+.DS_Store
+
+
+# Ignore everything in the "wp-content" directory, except the "plugins"
+# and "themes" directories.
+wp-content/*
+!wp-content/plugins/
+!wp-content/themes/
+
+# Ignore everything in the "plugins" directory, except the plugins you want
+wp-content/plugins/*
+
+
+# Ignore everything in the "themes" directory, except the themes you want
+wp-content/themes/*
+!wp-content/themes/pagelytest
